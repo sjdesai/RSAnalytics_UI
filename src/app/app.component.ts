@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'brand-analytics';
   clickedSideNavButton:string = '';
 
-  private clickedNav(navigationLocation:string){
+  clickedNav(navigationLocation:string){
     this.clickedSideNavButton = navigationLocation;
   }
 }
