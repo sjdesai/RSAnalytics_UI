@@ -1,0 +1,53 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<mat-sidenav-container class='example-container'>
+  <mat-sidenav #sidenav mode='side' opened class='main-sidenav'>
+    <mat-nav-list>
+      <mat-list-item class='sidenav-button hover-button' [ngClass]="{'sidenav-button-onclick': clickedSideNavButton == 'home'}">
+        <a (click)='clickedNav("home")'>
+          <table>
+            <tr>
+              <td>
+                <i class="material-icons">home</i> 
+              </td>
+              <td>
+                <div class='sidenav-title inline-align'>
+                  Dashboard Home
+                </div>
+              </td>
+            </tr>
+          </table>
+        </a>
+      </mat-list-item>
+
+      <mat-list-item class='sidenav-button hover-button' [ngClass]="{'sidenav-button-onclick': clickedSideNavButton == 'profile'}">
+        <a (click)="clickedNav('profile')">
+          <table>
+            <tr>
+              <td>
+                <i class="material-icons">home</i> 
+              </td>
+              <td>
+                <div class='sidenav-title inline-align'>
+                  Dashboard Profile
+                </div>
+              </td>
+            </tr>
+          </table>
+        </a>
+      </mat-list-item>
+
+    </mat-nav-list>
+    <div class='close-sidenav hover-button' (click)='sidenav.toggle()'>
+      <i class="material-icons">keyboard_arrow_left</i>
+    </div>  
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    ehello
+    <div class='open-sidenav hover-button' (click)='sidenav.toggle()' *ngIf="!sidenav.opened">
+      <i class="material-icons">keyboard_arrow_right</i>
+    </div>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

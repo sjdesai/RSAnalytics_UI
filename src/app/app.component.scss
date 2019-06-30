@@ -1,0 +1,51 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+}
+
+.main-sidenav {
+    background-color: #001529;
+    color: #d7d8db;
+    max-width: 16em;
+}
+
+.close-sidenav {
+    background-color: #002140;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 22px 0px;
+    text-align: center;
+}
+
+.sidenav-button {
+    color: #b8beca;
+}
+
+.sidenav-button:hover {
+    color: #e7e8eb;
+}
+
+.sidenav-button-onclick {
+    background-color: #0190fe;
+    color: #e7e8eb;
+}
+
+.sidenav-title {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.open-sidenav {
+    background-color: #002140;
+    position: absolute;
+    bottom:0px;
+    width: 60px;
+    padding: 22px 0px;
+    text-align: center;
+    color: #d7d8db;
+}
